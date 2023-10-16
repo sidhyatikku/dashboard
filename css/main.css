@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  font-family: 'Inconsolata', monospace;
+  /* font-weight: 600; */
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vh;
+  background-color: #010a40;
+  color: yellow;
+}
+
+a {
+  color: white;
+}
+
+.img_svg {
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.narwhal_logo {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 500;
+  height: 50vh;
+}
+
+.narwhal_logo.active {
+  fill-opacity: 1 !important;
+  transition: fill-opacity ease-in 0.5s !important;
+}
+
+
+#header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15vh;
+}
+
+.description {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-bottom: 50vh;
+}
