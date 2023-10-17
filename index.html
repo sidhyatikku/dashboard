@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>The Dashboard</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="img/narwhal_img.svg">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
@@ -43,7 +44,6 @@
         direction: 'alternate',
         loop: false,
         complete: function(anim) {
-            // Animation completed, change the fill color to yellow
             const svg = document.querySelector('.narwhal_logo');
             svg.classList.add('active');
           }
@@ -65,14 +65,34 @@
           .deleteChars(10)
           .typeString('Balance Sheets')
           .pauseFor(5000)
+          .deleteChars(14)
+          .typeString('Dirty Laundry')
+          .pauseFor(5000)
+          .deleteChars(13)
+          .typeString('Ledger')
+          .pauseFor(5000)
+          .deleteChars(6)
+          .typeString('Liabilities')
+          .pauseFor(5000)
           .start();
 
     </script>
 
 
     <div class="description">
-      The Dashboard contains all a summarization of The New School's Financial Data. You can interacti with the graphs to make your own analysis. The data has been scraped sourced from the IRS.
+      The Dashboard contains all a summarization of The New School's Financial Data. You can interacte with the graphs to draw comparisons and make your own analysis. The New School is a 501(c)3 designated non-profit and their financial data can be publicly accessed by visiting the IRS website and looking up their data with <strong>EIN #13-3297197</strong>. This website was created out of growing frustration amongst The New School community and alleged dispropotionate allocation of wages and finances. The aim of this website is to provide access to complex financial data within minutes and enable people to visualize the balance sheets.
 
+    </div>
+
+    <div class="footer">
+      <div class="foot_2">
+        <a href="pdfs/fy_2021_22.pdf" class="fin_pdf" target="_blank">FY 2021-22</a>
+        <a href="pdfs/fy_2020_21.pdf" class="fin_pdf" target="_blank">FY 2020-21</a>
+        <a href="pdfs/fy_2019_20.pdf" class="fin_pdf" target="_blank">FY 2019-20</a>
+        <a href="pdfs/fy_2018_19.pdf" class="fin_pdf" target="_blank">FY 2018-19</a>
+        <a href="pages/license.html" class="license">License</a>
+      </div>
+      <div class="foot_1">Made for The New School by Sidhya Tikku</div>
     </div>
 
   </body>

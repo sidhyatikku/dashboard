@@ -17,8 +17,8 @@ a {
 }
 
 .img_svg {
-  margin-top: 25vh;
-  margin-bottom: 25vh;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -26,29 +26,13 @@ a {
 }
 
 .narwhal_logo {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 500;
-  height: 30vh;
+  height: 6vh;
   width: auto;
 }
 
 .narwhal_logo.active {
   fill-opacity: 1 !important;
-  transition: fill-opacity ease-in 0.2s !important;
-}
-
-
-#header {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 15vh;
-}
-
-.description {
-  margin-left: 10vw;
-  margin-right: 10vw;
-  padding-bottom: 50vh;
+  transition: fill-opacity ease-in 0.5s !important;
 }
 
 .footer  {
@@ -70,4 +54,18 @@ a {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 5vh;
+}
+
+.description {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  height: 55vh;  
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between;
+  margin-bottom: 10vh;    
+}
+
+.license_parts_mid {
+    text-align: center;
 }
