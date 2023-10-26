@@ -48,7 +48,11 @@ a {
 .description {
   margin-left: 10vw;
   margin-right: 10vw;
-  padding-bottom: 50vh;
+  padding-bottom: 10vh;
+}
+
+.tableau_main {
+  margin-bottom: 10vh;
 }
 
 .footer  {
