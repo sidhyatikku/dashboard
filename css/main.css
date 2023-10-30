@@ -8,8 +8,8 @@ html {
   margin-left: 5vw;
   margin-right: 5vw;
   margin-top: 5vh;
-  background-color: #010a40;
-  color: yellow;
+  background-color: #0B1340;
+  color: #F9C650;
 }
 
 a {
@@ -68,9 +68,64 @@ a {
   margin-bottom: 5vh;
 }
 
+.article {
+  margin-top: 10vh;
+  text-align: justify;
+}
+
+.article_title {
+  font-size: 5vh;
+  margin-bottom: 5vh;
+  font-weight: 600;
+}
+
+.article_content {
+  display: flex;
+  flex-direction: row;
+  row-gap: 5vh;
+  column-gap: 5vh;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 10vh;
+}
+
+.article_main {
+  margin-bottom: 2vh;
+  flex: 40%;
+}
+
+.article_graph_tuition {
+  width: 50vw;
+  height: auto;
+}
+
+.article_graph_p_l {
+  width: 50vw;
+  height: auto;
+}
+
+.article_graph_prez_main {
+  width: 100%;
+  height: auto;
+}
+
+.article_main_full {
+  flex: 100%;
+}
+
+.article_graph_prez2 {
+  height: auto;
+  width: 16vw;
+}
+
+.article_main_more {
+  width: 70vw;
+}
+
 .foot_2 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 5vh;
