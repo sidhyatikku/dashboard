@@ -18,7 +18,7 @@ a {
 
 .img_svg {
   margin-top: 25vh;
-  margin-bottom: 25vh;
+  margin-bottom: 20vh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -28,7 +28,7 @@ a {
 .narwhal_logo {
   stroke-dasharray: 1000;
   stroke-dashoffset: 500;
-  height: 30vh;
+  height: 25vh;
   width: auto;
 }
 
