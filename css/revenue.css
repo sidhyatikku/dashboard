@@ -5,20 +5,31 @@ html {
   /* font-weight: 600; */
   font-weight: 400;
   font-size: 1.5rem;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  background-color: #00051D;
   margin-top: 5vh;
-  background-color: #0B1340;
-  color: #F9C650;
+  color: #D4A500;
+}
+
+.content {
+  margin-right: 5vw;
+  margin-left: 5vw;
 }
 
 a {
   color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+strong {
+  font-weight: 900;
 }
 
 .img_svg {
-  margin-top: 2vh;
-  margin-bottom: 4vh;
+  margin-top: 25vh;
+  margin-bottom: 20vh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -26,15 +37,36 @@ a {
 }
 
 .narwhal_logo {
-  height: 6vh;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 500;
+  height: 25vh;
   width: auto;
 }
 
 .narwhal_logo.active {
   fill-opacity: 1 !important;
-  transition: fill-opacity ease-in 0.5s !important;
+  transition: fill-opacity ease-in 0.2s !important;
 }
 
+
+#header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15vh;
+}
+
+.description {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-bottom: 10vh;
+  line-height: 1.15;
+}
+
+
+.tableau_main {
+  margin-bottom: 10vh;
+}
 
 footer  {
   background: #050B27 !important;
@@ -83,18 +115,4 @@ footer  {
   display: flex;
   flex-direction: column;
   gap: 3vh;
-}
-
-.description {
-  margin-left: 10vw;
-  margin-right: 10vw;
-  height: 55vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 10vh;
-}
-
-.license_parts_mid {
-    text-align: center;
 }
