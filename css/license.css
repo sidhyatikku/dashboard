@@ -25,17 +25,6 @@ a {
   align-items: center;
 }
 
-.narwhal_logo {
-  height: 6vh;
-  width: auto;
-}
-
-.narwhal_logo.active {
-  fill-opacity: 1 !important;
-  transition: fill-opacity ease-in 0.5s !important;
-}
-
-
 footer  {
   background: #050B27 !important;
   /* border: red dashed 3px; */

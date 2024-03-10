@@ -28,24 +28,23 @@ strong {
 }
 
 .img_svg {
-  margin-top: 25vh;
-  margin-bottom: 20vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
 }
 
-.narwhal_logo {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 500;
-  height: 25vh;
+.narwhal_img_svg {
+  height: 50vh;
   width: auto;
 }
-
-.narwhal_logo.active {
-  fill-opacity: 1 !important;
-  transition: fill-opacity ease-in 0.2s !important;
+.narwhal_logo_plus_path {
+  fill: #D4A500;
+  fill-opacity: 0;
+  stroke-width: 4;
+  transition: fill-opacity ease-in-out 0.25s !important;
 }
 
 

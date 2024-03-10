@@ -36,7 +36,18 @@ strong {
   align-items: center;
 }
 
+.narwhal_logo {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 500;
+  height: 50vh;
+  width: auto;
+  stroke-width: 2;
+  stroke-opacity: 0.8;
+}
 
+.narwhal_logo.active {
+  transition: fill-opacity ease-in-out 0.25s !important;
+}
 
 
 #header {
@@ -53,10 +64,6 @@ strong {
   line-height: 1.15;
 }
 
-.narwhal_img_svg {
-  height: 50vh;
-  width: auto;
-}
 
 .tableau_main {
   margin-bottom: 10vh;
