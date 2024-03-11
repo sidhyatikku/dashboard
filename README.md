@@ -15,7 +15,7 @@ The Dashboard contains a summarization of The New School's Financial Data. You c
 
 This project was created out of growing frustration amongst The New School community during 2022-23 academic year strikes and the alleged disproportionate allocation of wages and finances. The aim of this project is to provide access to complex financial data within minutes and enable people to visualize the balance sheets. You can click and interact with the visualizations and even download and share them.
 
-## Tech Stacks
+## Tech Stack
 - HTML
 - CSS
 - JS
