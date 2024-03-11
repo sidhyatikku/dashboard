@@ -29,4 +29,4 @@ This project was created out of growing frustration amongst The New School commu
 
 ## License & Disclaimer
 MIT License (c) 2024 Sidhya Tikku <br>
-View License and [Learn more about the MIT License](https://opensource.org/license/mit)
+[View License](LICENSE) and [Learn more about the MIT License](https://opensource.org/license/mit)
