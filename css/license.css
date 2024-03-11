@@ -5,24 +5,87 @@ html {
   /* font-weight: 600; */
   font-weight: 400;
   font-size: 1.5rem;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  background-color: #00051D;
   margin-top: 5vh;
-  background-color: #0B1340;
-  color: #F9C650;
+  color: #D4A500;
+}
+
+.content {
+  margin-right: 5vw;
+  margin-left: 5vw;
 }
 
 a {
   color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+strong {
+  font-weight: 900;
 }
 
 .img_svg {
-  margin-top: 2vh;
-  margin-bottom: 4vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+}
+
+.narwhal_img_svg {
+  height: 50vh;
+  width: auto;
+}
+.narwhal_logo_plus_path {
+  fill: #D4A500;
+  fill-opacity: 0;
+  stroke-width: 4;
+  transition: fill-opacity ease-in-out 0.25s !important;
+}
+
+.log_init {
+  height: 10vh;
+  width: auto;
+  display: block;
+  margin: auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
+}
+
+#svg-container svg {
+  fill: red;
+  height: 10vh;
+  width: auto;
+}
+
+
+#header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10vh;
+}
+
+
+.description {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-bottom: 5vh;
+  line-height: 1.15;
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10vh;
+}
+
+.license_parts_mid {
+    text-align: center;
 }
 
 footer  {
@@ -74,16 +137,135 @@ footer  {
   gap: 3vh;
 }
 
-.description {
-  margin-left: 10vw;
-  margin-right: 10vw;
-  height: 55vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 10vh;
+@media only screen and (min-height:701px) and (orientation: portrait){
+  html {
+    font-size: 0.9rem;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .img_svg {
+    margin-top: 30vh;
+    margin-bottom: 25vh;
+  }
+
+  .narwhal_img_svg {
+    height: 27vh;
+  }
+
+  #header {
+    font-size: 1.5rem;
+    margin-bottom: 12vh;
+  }
+
+  .description {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+  .dataviz {
+    margin: 2vw;
+    margin-bottom: 10vh;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding-bottom: 5vh;
+  }
+
+  .logo_footer {
+    padding-top: 5vh;
+  }
+
+  .footer_site_title {
+    display: none;
+  }
+
+  .footer_content {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .links {
+    text-align: center;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .pages_main, .docs_irs, .docs_audit {
+    text-align: center;
+    gap: 5vh;
+  }
+
+
 }
 
-.license_parts_mid {
+@media only screen and (max-height: 700px) and (orientation: portrait) {
+  html {
+    font-size: 0.9rem;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .img_svg {
+    margin-top: 30vh;
+    margin-bottom: 25vh;
+  }
+
+  .narwhal_img_svg {
+    height: 27vh;
+  }
+
+  #header {
+    font-size: 1.5rem;
+    margin-bottom: 12vh;
+  }
+
+  .description {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+  .dataviz {
+    margin: 2vw;
+    margin-bottom: 10vh;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding-bottom: 5vh;
+  }
+
+  .logo_footer {
+    padding-top: 5vh;
+  }
+
+  .footer_site_title {
+    display: none;
+  }
+
+  .footer_content {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .links {
     text-align: center;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .pages_main, .docs_irs, .docs_audit {
+    text-align: center;
+    gap: 5vh;
+  }
+
 }

@@ -68,13 +68,13 @@ strong {
   margin-bottom: 10vh;
   margin-top: 15vh;
 }
-
 /*
 .tableauPlaceholder_mobile {
   content-visibility: hidden;
-}*/
+} */
 
 .tableauPlaceholder {
+  height: auto !important;
   content-visibility: visible;
 }
 
