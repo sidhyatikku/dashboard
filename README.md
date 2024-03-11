@@ -1,4 +1,4 @@
-# The Dashbboard
+# The Dashboard
 
 ### Sidhya Tikku
 Parsons School of Design at The New School<br>
