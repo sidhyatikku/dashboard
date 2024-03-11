@@ -83,6 +83,17 @@ strong {
   height: auto !important;
 }
 
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.main_nav a {
+  color: #D4A500 !important;
+}
+
 footer  {
   background: #050B27 !important;
   /* border: red dashed 3px; */
@@ -165,6 +176,11 @@ footer  {
     margin-bottom: 10vh;
   }
 
+  .main_nav {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
   footer {
     font-size: 1rem;
     padding-bottom: 5vh;
@@ -230,6 +246,11 @@ footer  {
   .dataviz {
     margin: 2vw;
     margin-bottom: 10vh;
+  }
+
+  .main_nav {
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 
   footer {
