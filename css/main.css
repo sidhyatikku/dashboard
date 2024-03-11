@@ -207,7 +207,7 @@ footer  {
 
   .img_svg {
     margin-top: 30vh;
-    margin-bottom: 25vh;
+    margin-bottom: 20vh;
   }
 
   .narwhal_logo {
@@ -261,7 +261,8 @@ footer  {
   }
 
   .marquee_left, .marquee_right {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    transform: scale(1, 1.5);
   }
 
   footer {
@@ -309,7 +310,7 @@ footer  {
 
   .img_svg {
     margin-top: 30vh;
-    margin-bottom: 25vh;
+    margin-bottom: 18vh;
   }
 
   .narwhal_logo {
@@ -366,7 +367,8 @@ footer  {
   }
 
   .marquee_left, .marquee_right {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    transform: scale(1, 1.5);
   }
 
   footer {
