@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Error 404 | The Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="../img/narwhal_favicon.svg">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8613NFM9R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Y8613NFM9R');
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Error 404 | The Dashboard" />
+    <meta name="description" content="Error 404 | The Dashboard contains a summarization of The New School's Financial Data from 2018-2022. You can interact with the graphs to draw comparisons and make your own analysis. " />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dashboard.sidhyatikku.com/" />
+    <meta property="og:title" content="Error 404 | The Dashboard" />
+    <meta property="og:description" content="Error 404 | The Dashboard contains a summarization of The New School's Financial Data from 2018-2022. You can interact with the graphs to draw comparisons and make your own analysis. " />
+    <meta property="og:image" content="https://dashboard.sidhyatikku.com/img/metaimgs/meta_images_home.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://dashboard.sidhyatikku.com/" />
+    <meta property="twitter:title" content="Error 404 | The Dashboard" />
+    <meta property="twitter:description" content="Error 404 | The Dashboard contains a summarization of The New School's Financial Data from 2018-2022. You can interact with the graphs to draw comparisons and make your own analysis. " />
+    <meta property="twitter:image" content="https://dashboard.sidhyatikku.com/img/metaimgs/meta_images_home.jpg" />
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+    html {
+      font-family: 'Inconsolata', monospace;
+      /* font-weight: 600; */
+      font-weight: 400;
+      background-color: #00051D;
+      margin-top: 5vh;
+      color: #D4A500;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .content {
+      margin-right: 5vw;
+      margin-left: 5vw;
+    }
+
+    a {
+      font-size: 1.25rem;
+      color: #D4A500;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    strong {
+      font-weight: 900;
+    }
+
+    .home_ref {
+      display: block;
+      text-align: center;
+    }
+
+    .img_svg {
+      margin-top: 15vh;
+      margin-bottom: 15vh;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+
+    #log_init {
+      height: 50vh;
+      width: auto;
+      display: block;
+      margin: auto;
+      margin-top: 10vh;
+      margin-bottom: 5vh;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+
+
+    #header {
+      text-align: center;
+      font-size: 4rem;
+      font-weight: 600;
+      margin-bottom: 10vh;
+    }
+
+
+    .description {
+      margin-left: 15vw;
+      margin-right: 15vw;
+      padding-bottom: 5vh;
+      line-height: 1.15;
+      display: flex;
+      height: 50vh;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 10vh;
+    }
+
+    .license_parts_mid {
+        text-align: center;
+    }
+
+    @media only screen and (min-height:701px) and (orientation: portrait){
+      html {
+        font-size: 0.9rem;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .img_svg {
+        margin-top: 30vh;
+        margin-bottom: 25vh;
+      }
+
+      #header {
+        font-size: 3rem;
+        margin-bottom: 5vh;
+      }
+
+
+    }
+
+    @media only screen and (max-height: 700px) and (orientation: portrait) {
+      html {
+        font-size: 0.9rem;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .img_svg {
+        margin-top: 30vh;
+        margin-bottom: 25vh;
+      }
+
+      #header {
+        font-size: 3rem;
+        margin-bottom: 5vh;
+      }
+
+    }
+
+
+    </style>
+
+      </head>
+  <body>
+    <div class = "content">
+
+      <img src="img/narwhal.svg" alt="Narwhal Logo" id="log_init">
+      <!-- <div id="svg-container"></div> -->
+
+      <div id="header"></div>
+
+      <script>
+
+        var app = document.getElementById('header');
+
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
+            typewriter.typeString('Error 404')
+            .pauseFor(5000)
+            .deleteChars(9)
+            .typeString("Looks like you're Lost.")
+            .pauseFor(5000)
+            .deleteChars(23)
+            .typeString('Does Not Exist.')
+            .pauseFor(5000)
+            .deleteChars(15)
+            .typeString('Page Not Found.')
+            .pauseFor(5000)
+            .deleteChars(15)
+            .typeString('?')
+            .pauseFor(5000)
+            .start();
+
+      </script>
+
+      <a href="/" class="home_ref">Home>></a>
+
+    </div>
+  <script src="js/switch2.js"></script>
+  </body>
+</html>

@@ -5,20 +5,35 @@ html {
   /* font-weight: 600; */
   font-weight: 400;
   font-size: 1.5rem;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  background-color: #00051D;
   margin-top: 5vh;
-  background-color: #0B1340;
-  color: #F9C650;
+  color: #D4A500;
+}
+
+.content {
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+body {
+  margin: 0;
 }
 
 a {
   color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+strong {
+  font-weight: 900;
 }
 
 .img_svg {
-  margin-top: 25vh;
-  margin-bottom: 25vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -28,13 +43,14 @@ a {
 .narwhal_logo {
   stroke-dasharray: 1000;
   stroke-dashoffset: 500;
-  height: 30vh;
+  height: 50vh;
   width: auto;
+  stroke-width: 2;
+  stroke-opacity: 0.8;
 }
 
 .narwhal_logo.active {
-  fill-opacity: 1 !important;
-  transition: fill-opacity ease-in 0.2s !important;
+  transition: fill-opacity ease-in-out 0.25s !important;
 }
 
 
@@ -45,88 +61,343 @@ a {
   margin-bottom: 15vh;
 }
 
+#line_container {
+  margin-top: 40vh;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.line_texts {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: inherit;
+  width: 100%;
+  z-index: -999;
+  font-size: 1.75rem;
+  top: 0;
+}
+
+.line {
+     position: relative;
+     height: 100px; /* Adjust thickness as needed */
+     width: 2000px;
+     margin-bottom: 2vh;
+     background-color: #D4A500;
+     transform-origin: top left;
+     transform: scaleY(0) rotate(0deg);
+     transition: transform 0.5s ease;
+     z-index: 999;
+     top: 0;
+   }
+
+#line_text_1 {
+  align-self: end;
+}
+
+#line_text_2 {
+  align-self: start;
+}
+
+
+#marquee_intro_main {
+  display: block;
+  text-align: center;
+  margin-top: 40vh;
+  margin-bottom: 30vh;
+  visibility: visible;
+}
+
+#marquee_intro_mobile {
+  display: block;
+  text-align: center;
+  margin-top: 40vh;
+  margin-bottom: 30vh;
+  display: none;
+}
+
+.marquee_right, .marquee_left {
+  opacity: 0.85;
+  margin-bottom: 3vh;
+  letter-spacing: 5px;
+  size: 2rem;
+  transform: scale(1, 2);
+}
+
+#want_know {
+  font-size: 2rem;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
 .description {
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-bottom: 10vh;
+  line-height: 1.15;
+}
+
+#enter_link {
+  color: #D4A500 !important;
+  text-align: center;
+  display: block;
+  margin-bottom: 30vh;
+}
+
+footer  {
+  background: #050B27 !important;
+  /* border: red dashed 3px; */
+  width: 100%;
+  font-size: 2rem;
+  color: white;
+  font-weight: 300;
   padding-bottom: 10vh;
 }
 
-.tableau_main {
-  margin-bottom: 10vh;
-}
-
-.footer  {
-  display: flex;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  width: auto;
-  flex-direction: column;
-  align-items: center;
-  font-size: 0.75rem;
-  color: white;
-  font-weight: 300;
-  margin-bottom: 5vh;
-}
-
-.article {
-  margin-top: 10vh;
-  text-align: justify;
-}
-
-.article_title {
-  font-size: 5vh;
-  margin-bottom: 5vh;
-  font-weight: 600;
-}
-
-.article_content {
+.footer_content {
+  padding-top: 25vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
   display: flex;
   flex-direction: row;
-  row-gap: 5vh;
-  column-gap: 5vh;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin-bottom: 10vh;
-}
-
-.article_main {
-  margin-bottom: 2vh;
-  flex: 40%;
-}
-
-.article_graph_tuition {
-  width: 50vw;
-  height: auto;
-}
-
-.article_graph_p_l {
-  width: 50vw;
-  height: auto;
-}
-
-.article_graph_prez_main {
-  width: 100%;
-  height: auto;
-}
-
-.article_main_full {
-  flex: 100%;
-}
-
-.article_graph_prez2 {
-  height: auto;
-  width: 16vw;
-}
-
-.article_main_more {
-  width: 70vw;
-}
-
-.foot_2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: space-between;
-  width: 100%;
-  margin-bottom: 5vh;
+}
+
+.logo_footer {
+  height: auto;
+  display: flex;
+  align-items: baseline;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #D4A500;
+}
+
+.footer_logo_png {
+  height: 4vh;
+  width: auto;
+  margin-right: 1vw;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 6vh;
+}
+.pages_main, .docs_irs, .docs_audit {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+
+@media only screen and (min-height:701px) and (orientation: portrait){
+  html {
+    font-size: 0.9rem;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .img_svg {
+    margin-top: 30vh;
+    margin-bottom: 25vh;
+  }
+
+  .narwhal_logo {
+    height: 27vh;
+  }
+
+  #header {
+    font-size: 1.5rem;
+    margin-bottom: 12vh;
+  }
+
+  .description {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+  #line_container {
+    margin-top: 10vh;
+    height: 80vh;
+  }
+
+  .line {
+    height: 30px;
+    margin-bottom: 5vh;
+  }
+
+  .line_texts {
+    font-size: 1.5rem;
+  }
+
+  #line_text_1 {
+    text-align: right;
+  }
+
+  #line_text_2 {
+    text-align: left;
+  }
+
+  #want_know_mobile {
+    font-size: 1.5rem;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+
+  #marquee_intro_main {
+    display: none;
+  }
+
+  #marquee_intro_mobile {
+    display: block;
+  }
+
+  .marquee_left, .marquee_right {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding-bottom: 5vh;
+  }
+
+  .logo_footer {
+    padding-top: 5vh;
+  }
+
+  .footer_site_title {
+    display: none;
+  }
+
+  .footer_content {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .links {
+    text-align: center;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .pages_main, .docs_irs, .docs_audit {
+    text-align: center;
+    gap: 5vh;
+  }
+
+
+}
+
+@media only screen and (max-height: 700px) and (orientation: portrait) {
+  html {
+    font-size: 0.9rem;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .img_svg {
+    margin-top: 30vh;
+    margin-bottom: 25vh;
+  }
+
+  .narwhal_logo {
+    height: 27vh;
+  }
+
+  #header {
+    font-size: 1.5rem;
+    margin-bottom: 12vh;
+  }
+
+  .description {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+  #line_container {
+    margin-top: 10vh;
+    height: 80vh;
+  }
+
+  .line {
+    height: 30px;
+    margin-bottom: 5vh;
+  }
+
+  .line_texts {
+    font-size: 1.25rem;
+    width: 100%;
+  }
+
+  #line_text_1 {
+    text-align: right;
+    width: 75%;
+  }
+
+  #line_text_2 {
+    text-align: left;
+    width: 75%;
+  }
+
+  #want_know_mobile {
+    font-size: 1.25rem;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+
+  #marquee_intro_main {
+    display: none;
+  }
+
+  #marquee_intro_mobile {
+    display: block;
+  }
+
+  .marquee_left, .marquee_right {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding-bottom: 5vh;
+  }
+
+  .logo_footer {
+    padding-top: 5vh;
+  }
+
+  .footer_site_title {
+    display: none;
+  }
+
+  .footer_content {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .links {
+    text-align: center;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .pages_main, .docs_irs, .docs_audit {
+    text-align: center;
+    gap: 5vh;
+  }
+
 }

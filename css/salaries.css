@@ -10,13 +10,13 @@ html {
   color: #D4A500;
 }
 
-body {
-  margin: 0;
-}
-
 .content {
   margin-right: 5vw;
   margin-left: 5vw;
+}
+
+body {
+  margin: 0;
 }
 
 a {
@@ -51,45 +51,46 @@ strong {
   transition: fill-opacity ease-in-out 0.25s !important;
 }
 
-#log_init {
-  height: 20vh;
-  width: auto;
-  display: block;
-  margin: auto;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
-  transition: opacity 0.2s ease-in-out;
-}
-
-#svg-container svg {
-  fill: red;
-  height: 10vh;
-  width: auto;
-}
-
 
 #header {
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
 }
-
 
 .description {
   margin-left: 15vw;
   margin-right: 15vw;
   padding-bottom: 5vh;
   line-height: 1.15;
+}
+
+.dataviz {
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-bottom: 10vh;
+  margin-top: 15vh;
+}
+/*
+.tableauPlaceholder_mobile {
+  content-visibility: hidden;
+} */
+
+.tableauPlaceholder {
+  height: auto !important;
+  content-visibility: visible;
+}
+
+.main_nav {
   display: flex;
-  height: 50vh;
-  flex-direction: column;
   justify-content: space-between;
+  margin-top: 10vh;
   margin-bottom: 10vh;
 }
 
-.license_parts_mid {
-    text-align: center;
+.main_nav a {
+  color: #D4A500 !important;
 }
 
 footer  {
@@ -161,14 +162,22 @@ footer  {
 
   #header {
     font-size: 1.5rem;
-    margin-bottom: 5vh;
+    margin-bottom: 12vh;
   }
 
   .description {
-    height: auto;
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+  .dataviz {
+    margin: 2vw;
+    margin-bottom: 10vh;
+  }
+
+  .main_nav {
     margin-left: 5vw;
     margin-right: 5vw;
-    margin-bottom: 5vw;
   }
 
   footer {
@@ -225,16 +234,24 @@ footer  {
 
   #header {
     font-size: 1.5rem;
-    margin-bottom: 5vh;
+    margin-bottom: 12vh;
   }
 
   .description {
-    height: auto;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-bottom: 5vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
   }
 
+  .dataviz {
+    margin: 2vw;
+    margin-bottom: 10vh;
+  }
+
+  .main_nav {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  
   footer {
     font-size: 1rem;
     padding-bottom: 5vh;
