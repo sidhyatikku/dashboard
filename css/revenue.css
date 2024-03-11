@@ -128,7 +128,7 @@ footer  {
 
 @media only screen and (min-height:701px) and (orientation: portrait){
   html {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   body {
@@ -146,7 +146,7 @@ footer  {
 
   #header {
     font-size: 1.5rem;
-    margin-bottom: 10vh;
+    margin-bottom: 12vh;
   }
 
   .description {
@@ -156,6 +156,7 @@ footer  {
 
   .dataviz {
     margin: 2vw;
+    margin-bottom: 10vh;
   }
 
   footer {
@@ -194,7 +195,7 @@ footer  {
 
 @media only screen and (max-height: 700px) and (orientation: portrait) {
   html {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   body {
@@ -212,7 +213,7 @@ footer  {
 
   #header {
     font-size: 1.5rem;
-    margin-bottom: 10vh;
+    margin-bottom: 12vh;
   }
 
   .description {
@@ -222,6 +223,7 @@ footer  {
 
   .dataviz {
     margin: 2vw;
+    margin-bottom: 10vh;
   }
 
   footer {
@@ -254,5 +256,5 @@ footer  {
     text-align: center;
     gap: 5vh;
   }
-  
+
 }
