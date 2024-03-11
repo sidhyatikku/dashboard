@@ -15,6 +15,10 @@ html {
   margin-left: 5vw;
 }
 
+body {
+  margin: 0;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -76,6 +80,7 @@ strong {
 
 .tableauPlaceholder {
   content-visibility: visible;
+  height: auto !important;
 }
 
 footer  {

@@ -15,6 +15,10 @@ html {
   margin-left: 5vw;
 }
 
+body {
+  margin: 0;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -57,6 +61,77 @@ strong {
   margin-bottom: 15vh;
 }
 
+#line_container {
+  margin-top: 40vh;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.line_texts {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: inherit;
+  width: 100%;
+  z-index: -999;
+  font-size: 1.75rem;
+  top: 0;
+}
+
+.line {
+     position: relative;
+     height: 100px; /* Adjust thickness as needed */
+     width: 2000px;
+     margin-bottom: 2vh;
+     background-color: #D4A500;
+     transform-origin: top left;
+     transform: scaleY(0) rotate(0deg);
+     transition: transform 0.5s ease;
+     z-index: 999;
+     top: 0;
+   }
+
+#line_text_1 {
+  align-self: end;
+}
+
+#line_text_2 {
+  align-self: start;
+}
+
+
+#marquee_intro_main {
+  display: block;
+  text-align: center;
+  margin-top: 40vh;
+  margin-bottom: 30vh;
+  visibility: visible;
+}
+
+#marquee_intro_mobile {
+  display: block;
+  text-align: center;
+  margin-top: 40vh;
+  margin-bottom: 30vh;
+  display: none;
+}
+
+.marquee_right, .marquee_left {
+  opacity: 0.85;
+  margin-bottom: 3vh;
+  letter-spacing: 5px;
+  size: 2rem;
+  transform: scale(1, 2);
+}
+
+#want_know {
+  font-size: 2rem;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
 .description {
   margin-left: 15vw;
   margin-right: 15vw;
@@ -64,9 +139,11 @@ strong {
   line-height: 1.15;
 }
 
-
-.tableau_main {
-  margin-bottom: 10vh;
+#enter_link {
+  color: #D4A500 !important;
+  text-align: center;
+  display: block;
+  margin-bottom: 30vh;
 }
 
 footer  {
@@ -116,4 +193,211 @@ footer  {
   display: flex;
   flex-direction: column;
   gap: 3vh;
+}
+
+
+@media only screen and (min-height:701px) and (orientation: portrait){
+  html {
+    font-size: 0.9rem;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .img_svg {
+    margin-top: 30vh;
+    margin-bottom: 25vh;
+  }
+
+  .narwhal_logo {
+    height: 27vh;
+  }
+
+  #header {
+    font-size: 1.5rem;
+    margin-bottom: 12vh;
+  }
+
+  .description {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+  #line_container {
+    margin-top: 10vh;
+    height: 80vh;
+  }
+
+  .line {
+    height: 30px;
+    margin-bottom: 5vh;
+  }
+
+  .line_texts {
+    font-size: 1.5rem;
+  }
+
+  #line_text_1 {
+    text-align: right;
+  }
+
+  #line_text_2 {
+    text-align: left;
+  }
+
+  #want_know_mobile {
+    font-size: 1.5rem;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+
+  #marquee_intro_main {
+    display: none;
+  }
+
+  #marquee_intro_mobile {
+    display: block;
+  }
+
+  .marquee_left, .marquee_right {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding-bottom: 5vh;
+  }
+
+  .logo_footer {
+    padding-top: 5vh;
+  }
+
+  .footer_site_title {
+    display: none;
+  }
+
+  .footer_content {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .links {
+    text-align: center;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .pages_main, .docs_irs, .docs_audit {
+    text-align: center;
+    gap: 5vh;
+  }
+
+
+}
+
+@media only screen and (max-height: 700px) and (orientation: portrait) {
+  html {
+    font-size: 0.9rem;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .img_svg {
+    margin-top: 30vh;
+    margin-bottom: 25vh;
+  }
+
+  .narwhal_logo {
+    height: 27vh;
+  }
+
+  #header {
+    font-size: 1.5rem;
+    margin-bottom: 12vh;
+  }
+
+  .description {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+  #line_container {
+    margin-top: 10vh;
+    height: 80vh;
+  }
+
+  .line {
+    height: 30px;
+    margin-bottom: 5vh;
+  }
+
+  .line_texts {
+    font-size: 1.25rem;
+    width: 100%;
+  }
+
+  #line_text_1 {
+    text-align: right;
+    width: 75%;
+  }
+
+  #line_text_2 {
+    text-align: left;
+    width: 75%;
+  }
+
+  #want_know_mobile {
+    font-size: 1.25rem;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+
+  #marquee_intro_main {
+    display: none;
+  }
+
+  #marquee_intro_mobile {
+    display: block;
+  }
+
+  .marquee_left, .marquee_right {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding-bottom: 5vh;
+  }
+
+  .logo_footer {
+    padding-top: 5vh;
+  }
+
+  .footer_site_title {
+    display: none;
+  }
+
+  .footer_content {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .links {
+    text-align: center;
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .pages_main, .docs_irs, .docs_audit {
+    text-align: center;
+    gap: 5vh;
+  }
+
 }

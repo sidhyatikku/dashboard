@@ -10,6 +10,10 @@ html {
   color: #D4A500;
 }
 
+body {
+  margin: 0;
+}
+
 .content {
   margin-right: 5vw;
   margin-left: 5vw;
@@ -47,14 +51,14 @@ strong {
   transition: fill-opacity ease-in-out 0.25s !important;
 }
 
-.log_init {
-  height: 10vh;
+#log_init {
+  height: 20vh;
   width: auto;
   display: block;
   margin: auto;
   margin-top: 10vh;
-  margin-bottom: 10vh;
-
+  margin-bottom: 5vh;
+  transition: opacity 0.2s ease-in-out;
 }
 
 #svg-container svg {
@@ -157,17 +161,14 @@ footer  {
 
   #header {
     font-size: 1.5rem;
-    margin-bottom: 12vh;
+    margin-bottom: 5vh;
   }
 
   .description {
-    margin-left: 8vw;
-    margin-right: 8vw;
-  }
-
-  .dataviz {
-    margin: 2vw;
-    margin-bottom: 10vh;
+    height: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
   }
 
   footer {
@@ -224,17 +225,14 @@ footer  {
 
   #header {
     font-size: 1.5rem;
-    margin-bottom: 12vh;
+    margin-bottom: 5vh;
   }
 
   .description {
-    margin-left: 8vw;
-    margin-right: 8vw;
-  }
-
-  .dataviz {
-    margin: 2vw;
-    margin-bottom: 10vh;
+    height: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
   }
 
   footer {

@@ -1,9 +1,9 @@
     var images = [
-        "../img/narwhal.svg",
-        "../img/narwhal_plus.svg",  // Replace with the actual path
-        "../img/narwhal_minus.svg",
-        "../img/narwhal_percent.svg",
-        "../img/narwhal_pay.svg"
+        "img/narwhal.svg",
+        "img/narwhal_plus.svg",  // Replace with the actual path
+        "img/narwhal_minus.svg",
+        "img/narwhal_percent.svg",
+        "img/narwhal_pay.svg"
         // Add more image paths as needed
     ];
 
