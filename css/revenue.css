@@ -73,12 +73,13 @@ strong {
   margin-top: 15vh;
 }
 
-.tableauPlaceholder_mobile {
+/* .tableauPlaceholder_mobile {
   content-visibility: hidden;
-}
+} */
 
 .tableauPlaceholder {
   content-visibility: visible;
+  height: auto !important;
 }
 
 .main_nav {

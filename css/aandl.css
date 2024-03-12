@@ -80,6 +80,7 @@ strong {
 
 .tableauPlaceholder {
   content-visibility: visible;
+  height: auto !important;
 }
 
 .main_nav {
