@@ -140,11 +140,26 @@ strong {
 }
 
 #enter_link {
+  font-size: 1.4rem;
   color: #D4A500 !important;
   text-align: center;
   display: block;
   margin-bottom: 30vh;
+  animation: underline-animation 400ms infinite;
 }
+
+@keyframes underline-animation {
+        0% {
+            text-decoration: underline;
+        }
+        50% {
+            text-decoration: none;
+        }
+        100% {
+            text-decoration: underline;
+        }
+    }
+
 
 footer  {
   background: #050B27 !important;
@@ -247,7 +262,7 @@ footer  {
   }
 
   #want_know_mobile {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     margin-top: 20vh;
     margin-bottom: 20vh;
   }
@@ -353,7 +368,7 @@ footer  {
   }
 
   #want_know_mobile {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-top: 20vh;
     margin-bottom: 20vh;
   }
